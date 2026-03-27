@@ -178,7 +178,7 @@ export function CtaForm() {
                     id: "floja",
                     name: "loja",
                     label: "Nome da loja",
-                    placeholder: "Ex: AutoPrime Veículos",
+                    placeholder: "Ex: Nome da sua loja",
                     type: "text",
                   },
                   {

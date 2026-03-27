@@ -129,8 +129,8 @@ const features = [
     ),
     title: "Recuperação de Clientes",
     desc: "Reative clientes inativos da base com comunicações personalizadas e automáticas.",
-    image: "https://images.unsplash.com/photo-1494976388531-d1058494ceb8?w=600&q=80",
-    imageAlt: "Entrega de chaves de carro novo",
+    image: "https://images.unsplash.com/photo-1560958089-b8a1929cea89?w=600&q=80",
+    imageAlt: "Interior de showroom de carros premium",
     colorClass: "bg-brand-red/10 text-brand-red",
   },
 ];
