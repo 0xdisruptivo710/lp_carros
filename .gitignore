@@ -6,9 +6,9 @@ out
 next-env.d.ts
 
 # Reference repos (cloned for development)
-ui/
-magicui/
-aceternity-ui/
+/ui/
+/magicui/
+/aceternity-ui/
 taxonomy/
 leerob.io/
 Next-js-Boilerplate/
