@@ -1,0 +1,16 @@
+node_modules
+.next
+out
+.env*
+*.tsbuildinfo
+next-env.d.ts
+
+# Reference repos (cloned for development)
+ui/
+magicui/
+aceternity-ui/
+taxonomy/
+leerob.io/
+Next-js-Boilerplate/
+open-react-template/
+tailwind-landing-page-template/
