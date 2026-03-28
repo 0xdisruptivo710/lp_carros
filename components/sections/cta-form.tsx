@@ -42,10 +42,11 @@ function formatPhone(value: string) {
 
 export function CtaForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [errors, setErrors] = useState<Record<string, boolean>>({});
   const [phone, setPhone] = useState("");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -59,6 +60,22 @@ export function CtaForm() {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
+      setLoading(true);
+      try {
+        await fetch("https://aios-n8n-webhook.yspmhc.easypanel.host/webhook/lp-carros", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            nome: String(data.get("nome")).trim(),
+            whatsapp: phone,
+            loja: String(data.get("loja")).trim(),
+            cidade: String(data.get("cidade")).trim(),
+          }),
+        });
+      } catch {
+        // Submit even if webhook fails
+      }
+      setLoading(false);
       setSubmitted(true);
     }
   };
@@ -135,7 +152,7 @@ export function CtaForm() {
               {/* Trust image */}
               <div className="mt-8 overflow-hidden rounded-xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=600&q=80"
+                  src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&q=80"
                   alt="Interior de concessionária moderna"
                   width={600}
                   height={300}
@@ -248,22 +265,35 @@ export function CtaForm() {
                     shimmerDuration="3s"
                     borderRadius="12px"
                     background="rgba(30, 94, 255, 1)"
-                    className="mb-4 w-full py-[15px] text-[0.95rem] font-bold shadow-[0_0_28px_rgba(30,94,255,0.25)]"
+                    className="mb-4 w-full py-[15px] text-[0.95rem] font-bold shadow-[0_0_28px_rgba(30,94,255,0.25)] disabled:opacity-70"
+                    disabled={loading}
                   >
-                    Quero o AIOS CRM na minha loja
-                    <svg
-                      className="ml-2 h-[18px] w-[18px] transition-transform group-hover:translate-x-1"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M13 7l5 5m0 0l-5 5m5-5H6"
-                      />
-                    </svg>
+                    {loading ? (
+                      <>
+                        <svg className="mr-2 h-[18px] w-[18px] animate-spin" viewBox="0 0 24 24" fill="none">
+                          <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth={3} className="opacity-25" />
+                          <path d="M4 12a8 8 0 018-8" stroke="currentColor" strokeWidth={3} strokeLinecap="round" className="opacity-75" />
+                        </svg>
+                        Enviando...
+                      </>
+                    ) : (
+                      <>
+                        Quero o AIOS CRM na minha loja
+                        <svg
+                          className="ml-2 h-[18px] w-[18px] transition-transform group-hover:translate-x-1"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                        >
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6"
+                          />
+                        </svg>
+                      </>
+                    )}
                   </ShimmerButton>
                 )}
               </form>

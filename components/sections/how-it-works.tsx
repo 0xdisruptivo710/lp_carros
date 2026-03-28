@@ -47,8 +47,8 @@ const steps = [
     num: "4",
     title: "Gestão contínua",
     desc: "Seu gestor dedicado acompanha os resultados e otimiza a operação continuamente.",
-    image: "https://images.unsplash.com/photo-1560472355-109703aa3edc?w=500&q=80",
-    imageAlt: "Entrega de veículo e aperto de mãos",
+    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&q=80",
+    imageAlt: "Monitoramento contínuo de resultados e métricas",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="h-5 w-5">
         <path d="M22 11.08V12a10 10 0 11-5.93-9.14" stroke="currentColor" strokeWidth={2} strokeLinecap="round" />

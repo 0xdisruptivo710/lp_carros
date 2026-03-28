@@ -82,7 +82,7 @@ export function Problems() {
       {/* Subtle background car image */}
       <div className="absolute inset-0 opacity-[0.025]">
         <Image
-          src="https://images.unsplash.com/photo-1549317661-bd32c8ce0afa?w=1200&q=60"
+          src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=1200&q=60"
           alt=""
           fill
           className="object-cover"
