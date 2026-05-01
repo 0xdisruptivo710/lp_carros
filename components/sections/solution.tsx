@@ -87,156 +87,26 @@ export function Solution() {
             </div>
           </BlurFade>
 
-          {/* Dashboard mockup */}
+          {/* Real iPhone mockup */}
           <BlurFade delay={0.3} inView>
-            <div className="relative">
-              <div className="mockup">
-                <div className="flex items-center gap-[7px] border-b border-white/[0.05] bg-white/[0.025] px-[18px] py-[13px]">
-                  <div className="h-[9px] w-[9px] rounded-full bg-[#FF5F57]" />
-                  <div className="h-[9px] w-[9px] rounded-full bg-[#FFBD2E]" />
-                  <div className="h-[9px] w-[9px] rounded-full bg-[#28CA41]" />
-                  <span className="ml-auto font-display text-[0.65rem] font-bold uppercase tracking-[0.12em] text-white/30">
-                    AIOS CRM — Dashboard
-                  </span>
-                </div>
+            <div className="relative flex justify-center">
+              {/* Ambient glow behind phone */}
+              <div className="absolute left-1/2 top-1/2 -z-10 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-blue/10 blur-[80px]" />
+              <div className="absolute left-1/2 top-1/2 -z-10 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-pink/[0.06] blur-[100px]" />
 
-                {/* Stats row */}
-                <div className="p-[18px]">
-                  <div className="mb-4 grid grid-cols-3 gap-2.5">
-                    {[
-                      {
-                        label: "Leads ativos",
-                        value: "142",
-                        color: "text-brand-blue",
-                      },
-                      {
-                        label: "Conversão",
-                        value: "34%",
-                        color: "text-brand-green",
-                      },
-                      {
-                        label: "Reativados",
-                        value: "67",
-                        color: "text-brand-pink",
-                      },
-                    ].map((stat) => (
-                      <div
-                        key={stat.label}
-                        className="rounded-[10px] border border-white/[0.04] bg-white/[0.025] p-3"
-                      >
-                        <div className="text-[0.58rem] uppercase tracking-[0.06em] text-white/35">
-                          {stat.label}
-                        </div>
-                        <div
-                          className={`font-display text-[1.1rem] font-bold ${stat.color}`}
-                        >
-                          {stat.value}
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Kanban columns */}
-                  <div className="grid grid-cols-3 gap-2.5">
-                    {[
-                      {
-                        name: "Novos",
-                        count: "12",
-                        cards: [
-                          {
-                            name: "João Silva",
-                            sub: "Civic 2024 · Via Instagram",
-                            color: "border-l-brand-blue",
-                          },
-                          {
-                            name: "Ana Costa",
-                            sub: "HRV · Via Google Ads",
-                            color: "border-l-brand-red",
-                          },
-                          {
-                            name: "Pedro Lima",
-                            sub: "Corolla · Indicação",
-                            color: "border-l-brand-blue",
-                          },
-                        ],
-                      },
-                      {
-                        name: "Negociação",
-                        count: "8",
-                        cards: [
-                          {
-                            name: "Maria Souza",
-                            sub: "Tracker · Test drive",
-                            color: "border-l-brand-pink",
-                          },
-                          {
-                            name: "Lucas Rocha",
-                            sub: "Compass · Financiamento",
-                            color: "border-l-brand-pink",
-                          },
-                        ],
-                      },
-                      {
-                        name: "Fechamento",
-                        count: "5",
-                        cards: [
-                          {
-                            name: "Carlos Mendes",
-                            sub: "T-Cross · R$ 124.900",
-                            color: "border-l-brand-green",
-                          },
-                          {
-                            name: "Fernanda Dias",
-                            sub: "Onix Plus · R$ 89.900",
-                            color: "border-l-brand-green",
-                          },
-                        ],
-                      },
-                    ].map((col) => (
-                      <div
-                        key={col.name}
-                        className="rounded-[10px] border border-white/[0.035] bg-white/[0.015] p-2.5"
-                      >
-                        <div className="mb-2 flex items-center justify-between border-b border-white/[0.04] pb-[7px]">
-                          <span className="text-[0.58rem] font-bold uppercase tracking-[0.06em] text-white/40">
-                            {col.name}
-                          </span>
-                          <span className="rounded-full bg-brand-blue/[0.12] px-[7px] py-[2px] text-[0.55rem] font-bold text-brand-blue">
-                            {col.count}
-                          </span>
-                        </div>
-                        {col.cards.map((card) => (
-                          <div
-                            key={card.name}
-                            className={`mb-1.5 rounded-[7px] border border-white/[0.05] border-l-[3px] bg-white/[0.03] p-[9px] last:mb-0 ${card.color}`}
-                          >
-                            <div className="text-[0.62rem] font-semibold text-white">
-                              {card.name}
-                            </div>
-                            <div className="text-[0.55rem] text-white/30">
-                              {card.sub}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    ))}
-                  </div>
-
-                  {/* Real car image below kanban */}
-                  <div className="mt-4 overflow-hidden rounded-lg">
-                    <Image
-                      src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800&q=80"
-                      alt="Porsche em estrada de montanha"
-                      width={800}
-                      height={400}
-                      className="h-auto w-full object-cover opacity-50"
-                    />
-                  </div>
-                </div>
+              <div className="relative">
+                <Image
+                  src="/platform/iphone-queue.png"
+                  alt="Fila de atendimentos do AIOS CRM no celular — vendas e suporte em tempo real"
+                  width={520}
+                  height={1067}
+                  priority={false}
+                  className="relative h-auto w-full max-w-[380px] drop-shadow-[0_30px_60px_rgba(30,94,255,0.25)]"
+                />
               </div>
 
-              {/* Beams behind the mockup */}
-              <BackgroundBeams className="-z-10 opacity-50" />
+              {/* Beams behind */}
+              <BackgroundBeams className="-z-20 opacity-50" />
             </div>
           </BlurFade>
         </div>
