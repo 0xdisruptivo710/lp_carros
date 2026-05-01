@@ -42,7 +42,7 @@ export function Solution() {
                 A solução
               </div>
               <h2 className="mb-[22px] font-display text-[clamp(1.9rem,4vw,2.8rem)] font-extrabold leading-[1.08] tracking-[-0.025em]">
-                Conheça o <span className="text-brand-blue">AIOS CRM</span>
+                O sistema que transforma WhatsApp em <span className="text-brand-blue">máquina de vendas</span>
               </h2>
               <p className="mb-7 text-[1.08rem] leading-[1.75] text-gray-600">
                 A plataforma de gestão e automação de vendas feita para
