@@ -89,8 +89,8 @@ const features = [
         <rect x="6" y="8" width="36" height="32" rx="4" stroke="currentColor" strokeWidth={1.5} />
         <path d="M16 4v8M32 4v8M6 18h36" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" />
         <rect x="12" y="24" width="6" height="6" rx="1.5" fill="currentColor" opacity={0.15} stroke="currentColor" strokeWidth={1} />
-        <rect x="21" y="24" width="6" height="6" rx="1.5" fill="currentColor" opacity={0.1} stroke="currentColor" strokeWidth={1} opacity={0.4} />
-        <rect x="30" y="24" width="6" height="6" rx="1.5" fill="currentColor" opacity={0.1} stroke="currentColor" strokeWidth={1} opacity={0.4} />
+        <rect x="21" y="24" width="6" height="6" rx="1.5" fill="currentColor" stroke="currentColor" strokeWidth={1} opacity={0.4} />
+        <rect x="30" y="24" width="6" height="6" rx="1.5" fill="currentColor" stroke="currentColor" strokeWidth={1} opacity={0.4} />
         <path d="M14 27l1.5 1.5 3-3" stroke="currentColor" strokeWidth={1.5} strokeLinecap="round" strokeLinejoin="round" />
         <rect x="12" y="33" width="6" height="3" rx="1" fill="currentColor" opacity={0.08} />
         <rect x="21" y="33" width="6" height="3" rx="1" fill="currentColor" opacity={0.08} />
