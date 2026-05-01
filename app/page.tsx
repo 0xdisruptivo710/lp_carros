@@ -3,6 +3,7 @@ import { Hero } from "@/components/sections/hero";
 import { Marquee } from "@/components/sections/marquee";
 import { Problems } from "@/components/sections/problems";
 import { Solution } from "@/components/sections/solution";
+import { Platform } from "@/components/sections/platform";
 import { Features } from "@/components/sections/features";
 import { Results } from "@/components/sections/results";
 import { HowItWorks } from "@/components/sections/how-it-works";
@@ -18,6 +19,7 @@ export default function Page() {
       <Marquee />
       <Problems />
       <Solution />
+      <Platform />
       <Features />
       <Results />
       <HowItWorks />
