@@ -6,6 +6,7 @@ import { Solution } from "@/components/sections/solution";
 import { Features } from "@/components/sections/features";
 import { Results } from "@/components/sections/results";
 import { HowItWorks } from "@/components/sections/how-it-works";
+import { Faq } from "@/components/sections/faq";
 import { CtaForm } from "@/components/sections/cta-form";
 import { Footer } from "@/components/sections/footer";
 
@@ -20,6 +21,7 @@ export default function Page() {
       <Features />
       <Results />
       <HowItWorks />
+      <Faq />
       <CtaForm />
       <Footer />
     </>
