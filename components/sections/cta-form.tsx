@@ -300,6 +300,12 @@ export function CtaForm() {
 
               {!submitted && (
                 <>
+                  <div className="mb-4 flex items-center justify-center gap-2 rounded-lg border border-brand-blue/15 bg-brand-blue/[0.04] px-3 py-2.5 text-[0.78rem] text-gray-300">
+                    <svg className="h-3.5 w-3.5 shrink-0 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                    <span>Respondemos em até <strong className="text-white">15 minutos</strong> em horário comercial (seg-sex, 9h–18h)</span>
+                  </div>
                   <div className="mb-4 flex items-center gap-3.5">
                     <div className="h-px flex-1 bg-white/[0.07]" />
                     <span className="whitespace-nowrap text-[0.78rem] text-gray-400">
@@ -308,7 +314,7 @@ export function CtaForm() {
                     <div className="h-px flex-1 bg-white/[0.07]" />
                   </div>
                   <a
-                    href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
+                    href="https://wa.me/5515991286797?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex w-full items-center justify-center gap-2.5 rounded-xl border border-brand-green/[0.18] bg-brand-green/[0.06] px-4 py-[13px] text-[0.9rem] font-semibold text-brand-green transition-all duration-400 hover:-translate-y-0.5 hover:border-brand-green/[0.35] hover:bg-brand-green/[0.1]"
@@ -316,6 +322,9 @@ export function CtaForm() {
                     <WhatsAppIcon />
                     Prefiro falar agora no WhatsApp
                   </a>
+                  <p className="mt-4 text-center text-[0.72rem] leading-[1.55] text-gray-500">
+                    Seus dados são usados só para o contato comercial. Sem spam, sem revenda. Você pode cancelar quando quiser.
+                  </p>
                 </>
               )}
             </div>
