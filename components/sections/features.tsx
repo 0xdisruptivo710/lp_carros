@@ -21,6 +21,7 @@ const features = [
     gradient: "from-blue-500/20 via-blue-600/10 to-transparent",
     accentColor: "text-blue-400",
     colorClass: "bg-brand-blue/10 text-brand-blue",
+    track: "Captar",
   },
   {
     icon: (
@@ -41,6 +42,7 @@ const features = [
     gradient: "from-indigo-500/20 via-indigo-600/10 to-transparent",
     accentColor: "text-indigo-400",
     colorClass: "bg-brand-blue/10 text-brand-blue",
+    track: "Vender",
   },
   {
     icon: (
@@ -60,6 +62,7 @@ const features = [
     gradient: "from-pink-500/20 via-pink-600/10 to-transparent",
     accentColor: "text-pink-400",
     colorClass: "bg-brand-pink/10 text-brand-pink",
+    track: "Captar",
   },
   {
     icon: (
@@ -78,6 +81,7 @@ const features = [
     gradient: "from-red-500/20 via-red-600/10 to-transparent",
     accentColor: "text-red-400",
     colorClass: "bg-brand-red/10 text-brand-red",
+    track: "Reativar",
   },
   {
     icon: (
@@ -97,6 +101,7 @@ const features = [
     gradient: "from-cyan-500/20 via-cyan-600/10 to-transparent",
     accentColor: "text-cyan-400",
     colorClass: "bg-brand-blue/10 text-brand-blue",
+    track: "Vender",
   },
   {
     icon: (
@@ -114,6 +119,7 @@ const features = [
     gradient: "from-emerald-500/20 via-emerald-600/10 to-transparent",
     accentColor: "text-emerald-400",
     colorClass: "bg-brand-green/10 text-brand-green",
+    track: "Gerir",
   },
   {
     icon: (
@@ -130,6 +136,7 @@ const features = [
     gradient: "from-violet-500/20 via-violet-600/10 to-transparent",
     accentColor: "text-violet-400",
     colorClass: "bg-brand-pink/10 text-brand-pink",
+    track: "Captar",
   },
   {
     icon: (
@@ -147,6 +154,7 @@ const features = [
     gradient: "from-blue-500/20 via-sky-600/10 to-transparent",
     accentColor: "text-sky-400",
     colorClass: "bg-brand-blue/10 text-brand-blue",
+    track: "Gerir",
   },
   {
     icon: (
@@ -163,8 +171,16 @@ const features = [
     gradient: "from-rose-500/20 via-rose-600/10 to-transparent",
     accentColor: "text-rose-400",
     colorClass: "bg-brand-red/10 text-brand-red",
+    track: "Reativar",
   },
 ];
+
+const trackStyles: Record<string, string> = {
+  Captar: "border-brand-blue/25 bg-brand-blue/[0.08] text-brand-blue",
+  Vender: "border-brand-pink/25 bg-brand-pink/[0.08] text-brand-pink",
+  Reativar: "border-brand-red/25 bg-brand-red/[0.08] text-brand-red",
+  Gerir: "border-brand-green/25 bg-brand-green/[0.08] text-brand-green",
+};
 
 export function Features() {
   return (
@@ -176,7 +192,7 @@ export function Features() {
               Funcionalidades
             </div>
             <h2 className="font-display text-[clamp(1.9rem,4vw,2.8rem)] font-extrabold leading-[1.08] tracking-[-0.025em]">
-              Tudo que sua loja precisa em um só lugar
+              Tudo que sua loja precisa — captar, vender, reativar e gerir
             </h2>
           </div>
         </BlurFade>
@@ -196,6 +212,11 @@ export function Features() {
 
                 {/* Feature content */}
                 <div className="p-[26px] pt-5">
+                  <span
+                    className={`mb-3 inline-flex items-center rounded-full border px-2.5 py-[3px] text-[0.66rem] font-bold uppercase tracking-[0.08em] ${trackStyles[f.track]}`}
+                  >
+                    {f.track}
+                  </span>
                   <h3 className="mb-2 font-display text-[1.1rem] font-bold tracking-[-0.01em]">
                     {f.title}
                   </h3>
