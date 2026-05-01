@@ -74,9 +74,9 @@ export function Hero() {
         <div className="max-w-[760px]">
           {/* Badge */}
           <BlurFade delay={0.2} inView>
-            <div className="mb-9 inline-flex items-center gap-2.5 rounded-full border border-brand-blue/[0.18] bg-brand-blue/[0.08] px-[18px] py-2 text-[0.78rem] font-semibold text-brand-blue">
+            <div className="mb-9 inline-flex items-center gap-2.5 rounded-full border border-brand-blue/[0.14] bg-brand-blue/[0.06] px-[18px] py-2 text-[0.78rem] font-semibold text-brand-blue">
               <span className="h-[7px] w-[7px] animate-badge-pulse rounded-full bg-brand-blue" />
-              Usado por mais de 20 lojas no Brasil
+              Mais de 40 lojas usando no Brasil
             </div>
           </BlurFade>
 
@@ -100,7 +100,7 @@ export function Hero() {
           {/* Subtitle */}
           <BlurFade delay={0.7} inView>
             <p className="mb-11 max-w-[580px] text-[clamp(1rem,1.8vw,1.18rem)] leading-[1.75] text-gray-300">
-              O AIOS CRM automatiza seu atendimento, ativa leads inativos e gerencia toda a sua equipe de vendas com inteligência artificial — do primeiro contato ao fechamento.
+              O CRM com IA que atende, qualifica e agenda seus leads no WhatsApp — para a equipe focar só no fechamento.
             </p>
           </BlurFade>
 
@@ -124,7 +124,7 @@ export function Hero() {
               </a>
 
               <a
-                href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
+                href="https://wa.me/5515991286797?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 rounded-xl border border-brand-green/25 bg-brand-green/[0.08] px-7 py-4 text-base font-semibold text-brand-green transition-all duration-400 hover:-translate-y-0.5 hover:border-brand-green/45 hover:bg-brand-green/[0.14] hover:shadow-[0_8px_30px_rgba(37,211,102,0.15)]"
