@@ -54,41 +54,27 @@ export function Footer() {
                 <CarSilhouette />
               </div>
               <div className="mt-[18px] flex gap-2.5">
-                {[
-                  {
-                    label: "Instagram",
-                    icon: "M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M6.5 2h11A3.5 3.5 0 0121 5.5v11a3.5 3.5 0 01-3.5 3.5h-11A3.5 3.5 0 013 16.5v-11A3.5 3.5 0 016.5 2z",
-                  },
-                  {
-                    label: "LinkedIn",
-                    icon: "M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z",
-                  },
-                  {
-                    label: "YouTube",
-                    icon: "M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33zM9.75 15.02V8.48l5.75 3.27-5.75 3.27z",
-                  },
-                ].map((social) => (
-                  <a
-                    key={social.label}
-                    href="#"
-                    aria-label={social.label}
-                    className="flex h-[38px] w-[38px] items-center justify-center rounded-[10px] border border-white/[0.05] bg-white/[0.03] text-gray-400 transition-all duration-300 hover:border-brand-blue/[0.15] hover:bg-brand-blue/[0.08] hover:text-brand-blue"
+                <a
+                  href="https://www.instagram.com/aioscrm"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram do AIOS CRM"
+                  className="flex h-[38px] w-[38px] items-center justify-center rounded-[10px] border border-white/[0.05] bg-white/[0.03] text-gray-400 transition-all duration-300 hover:border-brand-blue/[0.15] hover:bg-brand-blue/[0.08] hover:text-brand-blue"
+                >
+                  <svg
+                    className="h-[17px] w-[17px]"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
                   >
-                    <svg
-                      className="h-[17px] w-[17px]"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d={social.icon}
-                      />
-                    </svg>
-                  </a>
-                ))}
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M6.5 2h11A3.5 3.5 0 0121 5.5v11a3.5 3.5 0 01-3.5 3.5h-11A3.5 3.5 0 013 16.5v-11A3.5 3.5 0 016.5 2z"
+                    />
+                  </svg>
+                </a>
               </div>
             </div>
 
