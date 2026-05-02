@@ -151,7 +151,7 @@ export function Footer() {
 
       {/* WhatsApp Float */}
       <a
-        href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
+        href="https://wa.me/5515997360619?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-[900] flex h-[58px] w-[58px] animate-wa-pulse items-center justify-center rounded-full bg-brand-green shadow-[0_4px_22px_rgba(37,211,102,0.4)] transition-all duration-400 hover:scale-110 hover:shadow-[0_6px_32px_rgba(37,211,102,0.55)]"

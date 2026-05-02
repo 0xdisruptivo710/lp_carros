@@ -124,7 +124,7 @@ export function Hero() {
               </a>
 
               <a
-                href="https://wa.me/5515991286797?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
+                href="https://wa.me/5515997360619?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 rounded-xl border border-brand-green/25 bg-brand-green/[0.08] px-7 py-4 text-base font-semibold text-brand-green transition-all duration-400 hover:-translate-y-0.5 hover:border-brand-green/45 hover:bg-brand-green/[0.14] hover:shadow-[0_8px_30px_rgba(37,211,102,0.15)]"

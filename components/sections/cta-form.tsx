@@ -314,7 +314,7 @@ export function CtaForm() {
                     <div className="h-px flex-1 bg-white/[0.07]" />
                   </div>
                   <a
-                    href="https://wa.me/5515991286797?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
+                    href="https://wa.me/5515997360619?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20AIOS%20CRM"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex w-full items-center justify-center gap-2.5 rounded-xl border border-brand-green/[0.18] bg-brand-green/[0.06] px-4 py-[13px] text-[0.9rem] font-semibold text-brand-green transition-all duration-400 hover:-translate-y-0.5 hover:border-brand-green/[0.35] hover:bg-brand-green/[0.1]"
